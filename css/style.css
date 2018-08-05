@@ -137,9 +137,9 @@ body {
     -webkit-background-size: cover;
     background-size: cover;
     min-height: calc((100vh) - 190px);
-    height: 100%;
     width: 100%;
     background: url(../img/skate.jpg) center center;
+    padding: 50px 20px;
 }
 
 .ui.cards {
@@ -192,6 +192,10 @@ body {
     letter-spacing: 1.2px;
 }
 
+#header .ui.cards{
+    margin-left: -15px!important;
+}
+
 @media (min-width: 1024px) {
     .uk-navbar-container , .uk-container{
         width: 100%;
@@ -200,4 +204,17 @@ body {
         box-sizing: border-box;
         margin: auto;
     }
+}
+
+@media (min-width: 960px) {
+
+    #header{
+        -webkit-background-size: cover;
+        background-size: cover;
+        min-height: calc((100vh) - 190px);
+        height: 100%;
+        width: 100%;
+        background: url(../img/skate.jpg) center center;
+    }
+
 }
