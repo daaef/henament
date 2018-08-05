@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'Futura';
+    src: url('./ufontscomfuturabook.eot');
+    src: local('ufontscomfuturabook'), url('./ufontscomfuturabook.woff') format('woff'), url('./ufontscomfuturabook.ttf') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_59767">Text with this font applied</p> */
+body {
+    font-family: 'Futura', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    letter-spacing: .4px;
+}
+.uk-navbar-container:not(.uk-navbar-transparent){
+    background-color: transparent;
+}
+.uk-sticky-fixed{
+    box-shadow: 0 0 20px #8080804d;
+}
+
+.uk-navbar-dropdown.uk-navbar-dropdown-width-5.uk-navbar-dropdown-dropbar{
+    left: 32px!important;
+}
+
+#topbar{
+    height: 30px;
+    background-color: transparent;
+}
+#topbar .uk-navbar-nav > li > a{
+    height: 30px;
+    color: #ffffff;
+}
+
+.uk-navbar-nav > li > a{
+    text-transform: capitalize;
+    font-family: 'Futura', sans-serif;
+}
+
+#topbar .uk-navbar-nav > li > a img{
+    height: 70%;
+}
+
+#midbar{
+    background-color: #913649;
+}
+
+#midbar .uk-navbar-nav > li> a{
+    font-size: .875rem;
+    letter-spacing: 2px;
+}
+
+#lowbar{
+    background-color: #9e5256;
+}
+
+#midbar>nav{
+    height: 60px;
+    background-color: transparent;
+}
+
+#midbar .uk-logo img{
+    height: 80%;
+}
+#midbar .uk-navbar-nav > li > a,#midbar .uk-navbar-item{
+    height: 60px;
+    color: #ffffff;
+}
+#lowbar .uk-logo img{
+    height: 80%;
+}
+#lowbar .uk-navbar-nav > li > a,#lowbar .uk-navbar-item{
+    height: 50px;
+    color: #ffffff;
+}
+/*.uk-navbar-dropbar-slide {*/
+    /*background: #e13333;*/
+/*}*/
+/*.uk-navbar-dropdown{*/
+    /*background-color: transparent!important;*/
+/*}*/
+
+#midbar .uk-navbar-nav li.uk-active, #midbar .uk-navbar-nav li.uk-active:hover{
+    background-color: #9e5256;
+}
+#midbar .uk-navbar-nav li:hover{
+    background-color: #a73c59;
+}
+#lowbar .uk-navbar-nav li:hover{
+    background-color: #ffffff;
+}
+#lowbar .uk-navbar-nav >.sale>a{
+    font-weight: 800;
+    background-color: #444444;
+    transform: skew(-12deg);
+    transition: all .5s;
+}
+#lowbar .uk-navbar-nav >.sale:hover >a{
+    font-weight: 800;
+    transform: none;
+    background-color: #ffffff;
+}
+#lowbar .uk-navbar-nav li:hover>a{
+    color: #000;
+}
+#midbar .uk-navbar-item .search input{
+    height: 38px;
+}
+
+.ui.icon.input > input:focus ~ i.icon{
+    border-radius: 50%;
+    background: #9e5256;
+    color: white;
+}
+
+.ui.icon.input > i.icon{
+    width: 38px!important;
+}
+
+
+
+
+
+@media (min-width: 1024px) {
+    .uk-navbar-container {
+        width: 100%;
+        max-width: 1366px;
+        padding: 0 32px;
+        box-sizing: border-box;
+        margin: auto;
+    }
+}
