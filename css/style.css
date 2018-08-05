@@ -136,7 +136,8 @@ body {
 #header{
     -webkit-background-size: cover;
     background-size: cover;
-    height: calc((100vh) - 190px);
+    min-height: calc((100vh) - 190px);
+    height: 100%;
     width: 100%;
     background: url(../img/skate.jpg) center center;
 }
@@ -148,17 +149,6 @@ body {
     margin: 0 auto!important;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-}
-
-
-@media (min-width: 1024px) {
-    .uk-navbar-container , .uk-container{
-        width: 100%;
-        max-width: 1366px;
-        padding: 0 32px;
-        box-sizing: border-box;
-        margin: auto;
-    }
 }
 
 .uk-button.uk-button-default:hover  {
@@ -187,4 +177,27 @@ body {
 .uk-button-default{
     color: rgb(0, 0, 0);
     border-color: rgb(0, 0, 0);
+}
+
+#sets{
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    padding: 50px 20px;
+}
+#sets .uk-card-title{
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 1.2px;
+}
+
+@media (min-width: 1024px) {
+    .uk-navbar-container , .uk-container{
+        width: 100%;
+        max-width: 1366px;
+        padding: 0 32px;
+        box-sizing: border-box;
+        margin: auto;
+    }
 }
