@@ -68,12 +68,12 @@ body {
 .uk-navbar-item a img{
     height: 100%;
 }
-.uk-navbar-item a{
-    height: 70%;
+#topbar .uk-navbar-item a{
+    height: 50%;
     transition: all .3s;
 }
-.uk-navbar-item a:hover{
-    height: 75%;
+#topbar .uk-navbar-item a:hover{
+    height: 55%;
 }
 
 #topbar{
