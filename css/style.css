@@ -161,11 +161,15 @@ body {
     font-family: 'NexaLight', sans-serif;
     font-size: 1.3rem;
     transition: background-color .4s, color .4s;
+    text-transform: none!important;
 }
+
+
 
 .button-def:hover{
     background-color: #d10000;
     color: #ffffff;
+    text-transform: none!important;
 }
 
 #content .uk-card-title{
@@ -182,6 +186,28 @@ footer{
 }
 footer>*{
     color: #ffffff;
+}
+
+.preview img{
+    filter: grayscale(100%);
+    transition: filter .6s;
+}
+.preview img:hover{
+    filter: grayscale(1%);
+}
+
+.uk-slidenav-next, .uk-slidenav-previous{
+    background-color: rgba(255, 255, 255, 0.69);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .6s;
+    border-radius: 50%;
+}
+.uk-slidenav-next:hover, .uk-slidenav-previous:hover{
+    background-color: #ffffff;
 }
 
 @media (min-width: 1024px) {
