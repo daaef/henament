@@ -11,369 +11,145 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/semantic.min.css">
 </head>
-<div class="uk-background-secondary">
-    <nav id="topbar" class="uk-navbar-container" uk-navbar>
-        <div class="uk-navbar-right">
-            <ul class="uk-navbar-nav">
-                <li><a href="#" class="uk-text-capitalize">Marketplace</a></li>
-                <li><a href="#" class="uk-text-capitalize">Help & FAQs</a></li>
-                <li><a href="#" class="uk-text-capitalize"><img src="img/ng.png" alt=""></a></li>
-            </ul>
-        </div>
-    </nav>
-</div>
-<div id="midbar" class="uk-child-width-1-1@s" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; animation: uk-animation-slide-top; show-on-up: true; bottom: #transparent-sticky-navbar">
-    <nav class="uk-navbar-container uk-margin uk-flex-between" uk-navbar="dropbar: true">
-        <div class="uk-navbar-left uk-width-auto">
+    <div id="topbar" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+         <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
+            <div class="uk-navbar-left uk-height-1-1">
+                <a class="uk-navbar-item uk-logo uk-height-1-1" href="#">
+                    <img src="img/Logo.png" alt="">
+                    <img class="smaller" src="img/logoText.png" alt="">
+                </a>
+                <ul class="uk-navbar-nav">
+                </ul>
 
-            <a class="uk-navbar-item uk-logo" href="#"><img src="img/logo.jpg" /></a>
-
-            <ul class="uk-navbar-nav">
-                <li>
-                    <a href="#" class="uk-text-uppercase uk-text-bold">
-                        Women
-                    </a>
-                </li>
-                <li class="uk-active">
-                    <a href="#" class="uk-text-uppercase uk-text-bold uk-article-title">
-                        Men
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="uk-navbar-item uk-visible@m uk-width-1-2@s">
-            <div class="ui category search uk-child-width-1-1@s uk-width-1-1@m">
-                <div class="ui icon input">
-                    <input class="prompt" type="text" placeholder="Search...">
-                    <i class="search icon"></i>
-                </div>
-                <div class="results"></div>
             </div>
-        </div>
-        <div class="uk-navbar-item uk-visible@m uk-width-auto">
-            <ul class="uk-navbar-nav">
-                <li>
-                    <a href="#" class="uk-text-uppercase uk-text-bold">
-                        <i class="user outline large icon"></i>
-                    </a>
-                </li>
-                <li >
-                    <a href="#" class="uk-text-uppercase uk-text-bold uk-article-title">
-                        <i class="heart outline large icon"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="uk-text-uppercase uk-text-bold uk-article-title">
-                        <i class="suitcase large icon"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</div>
-<div id="lowbar" class="uk-child-width-1-1@s" uk-sticky="offset: 60; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; animation: uk-animation-slide-top; show-on-up: true; bottom: #transparent-sticky-navbar">
-    <nav class="uk-navbar-container uk-margin" uk-navbar="dropbar: true">
-        <div class="uk-navbar-left">
-            <ul class="uk-navbar-nav">
-                <li class="sale">
-                    <a href="#">
-                        Sale
-                    </a>
-                    <div class="uk-navbar-dropdown uk-navbar-dropdown-width-5">
-                        <div class="uk-navbar-dropdown-grid uk-child-width-1-3@m" uk-grid>
-                            <div>
-                                <ul class="uk-nav uk-navbar-dropdown-nav">
-                                    <li class="uk-active"><a href="#">Active</a></li>
-                                    <li><a href="#">Item</a></li>
-                                    <li class="uk-nav-header">Header</li>
-                                    <li><a href="#">Item</a></li>
-                                    <li><a href="#">Item</a></li>
-                                    <li class="uk-nav-divider"></li>
-                                    <li><a href="#">Item</a></li>
-                                </ul>
-                            </div>
-                            <div class="uk-width-2-3@s uk-child-width-1-3@m uk-grid-small" uk-grid>
-                                <a>
-                                    <div class="uk-card uk-card-hover uk-padding-remove uk-card-body">
-                                        <img src="img/IMG-20180803-WA0018.jpg" alt="">
-                                    </div>
-                                </a>
-                                <a>
-                                    <div class="uk-card uk-card-hover  uk-padding-remove uk-card-body">
-                                        <img src="img/IMG-20180803-WA0018.jpg" alt="">
-                                    </div>
-                                </a>
-                                <a>
-                                    <div class="uk-card uk-card-hover  uk-padding-remove uk-card-body">
-                                        <img src="img/IMG-20180803-WA0018.jpg" alt="">
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+            <div class="uk-navbar-right uk-light">
+                <div class="uk-navbar-item">
+                    <a class="uk-link-reset" href="#"><img src="img/user.png" alt=""></a>
+                </div>
+                <div class="uk-navbar-item">
+                    <a class="uk-link-reset" href="#"><img src="img/cart.png" alt=""></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="lowbar" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+        <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
+            <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="#">Sales</a></li>
+                    <li>
+                        <a href="#">New Collection</a>
+                    </li>
+                    <li><a href="#">Clothing</a></li>
+                    <li><a href="#">Hats</a></li>
+                    <li><a href="#">Belts</a></li>
+                </ul>
+            </div>
+            <div class="uk-navbar-right">
+                <div class="uk-navbar-item">
+                    <input type="text" class="uk-input" placeholder="Search for items">
+                </div>
+            </div>
+        </nav>
+    </div>
+    <section class="uk-section" id="content">
+        <div class="uk-container uk-child-width-1-4@m uk-grid-small" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-box-shadow-hover-large">
+                    <div class="uk-card-media-top">
+                        <img src="images/light.jpg" alt="">
                     </div>
-                </li>
-                <li>
-                    <a href="#">
-                        Women
-                    </a>
-                    <div class="uk-navbar-dropdown uk-navbar-dropdown-width-5">
-                        <div class="uk-navbar-dropdown-grid uk-child-width-1-3@m" uk-grid>
-                            <div>
-                                <ul class="uk-nav uk-navbar-dropdown-nav">
-                                    <li class="uk-active"><a href="#">Active</a></li>
-                                    <li><a href="#">Item</a></li>
-                                    <li class="uk-nav-header">Header</li>
-                                    <li><a href="#">Item</a></li>
-                                    <li><a href="#">Item</a></li>
-                                    <li class="uk-nav-divider"></li>
-                                    <li><a href="#">Item</a></li>
-                                </ul>
-                            </div>
-                            <div class="uk-width-2-3@s uk-child-width-1-3@m uk-grid-small" uk-grid>
-                                <a>
-                                    <div class="uk-card uk-card-hover uk-padding-remove uk-card-body">
-                                        <img src="img/IMG-20180803-WA0018.jpg" alt="">
-                                    </div>
-                                </a>
-                                <a>
-                                    <div class="uk-card uk-card-hover  uk-padding-remove uk-card-body">
-                                        <img src="img/IMG-20180803-WA0018.jpg" alt="">
-                                    </div>
-                                </a>
-                                <a>
-                                    <div class="uk-card uk-card-hover  uk-padding-remove uk-card-body">
-                                        <img src="img/IMG-20180803-WA0018.jpg" alt="">
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Media Top</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                     </div>
-                </li>
-                <li>
-                    <a href="#">
-                        Women
-                    </a>
-                    <div class="uk-navbar-dropdown uk-navbar-dropdown-width-5">
-                        <div class="uk-navbar-dropdown-grid uk-child-width-1-3@m" uk-grid>
-                            <div>
-                                <ul class="uk-nav uk-navbar-dropdown-nav">
-                                    <li class="uk-active"><a href="#">Active</a></li>
-                                    <li><a href="#">Item</a></li>
-                                    <li class="uk-nav-header">Header</li>
-                                    <li><a href="#">Item</a></li>
-                                    <li><a href="#">Item</a></li>
-                                    <li class="uk-nav-divider"></li>
-                                    <li><a href="#">Item</a></li>
-                                </ul>
-                            </div>
-                            <div class="uk-width-2-3@s uk-child-width-1-3@m uk-grid-small" uk-grid>
-                                <a>
-                                    <div class="uk-card uk-card-hover uk-padding-remove uk-card-body">
-                                        <img src="img/IMG-20180803-WA0018.jpg" alt="">
-                                    </div>
-                                </a>
-                                <a>
-                                    <div class="uk-card uk-card-hover  uk-padding-remove uk-card-body">
-                                        <img src="img/IMG-20180803-WA0018.jpg" alt="">
-                                    </div>
-                                </a>
-                                <a>
-                                    <div class="uk-card uk-card-hover  uk-padding-remove uk-card-body">
-                                        <img src="img/IMG-20180803-WA0018.jpg" alt="">
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-box-shadow-hover-large">
+                    <div class="uk-card-media-top">
+                        <img src="images/light.jpg" alt="">
                     </div>
-                </li>
-                <li>
-                    <a href="#">
-                        Women
-                    </a>
-                    <div class="uk-navbar-dropdown uk-navbar-dropdown-width-5">
-                        <div class="uk-navbar-dropdown-grid uk-child-width-1-3@m" uk-grid>
-                            <div>
-                                <ul class="uk-nav uk-navbar-dropdown-nav">
-                                    <li class="uk-active"><a href="#">Active</a></li>
-                                    <li><a href="#">Item</a></li>
-                                    <li class="uk-nav-header">Header</li>
-                                    <li><a href="#">Item</a></li>
-                                    <li><a href="#">Item</a></li>
-                                    <li class="uk-nav-divider"></li>
-                                    <li><a href="#">Item</a></li>
-                                </ul>
-                            </div>
-                            <div class="uk-width-2-3@s uk-child-width-1-3@m uk-grid-small" uk-grid>
-                                <a>
-                                    <div class="uk-card uk-card-hover uk-padding-remove uk-card-body">
-                                        <img src="img/IMG-20180803-WA0018.jpg" alt="">
-                                    </div>
-                                </a>
-                                <a>
-                                    <div class="uk-card uk-card-hover  uk-padding-remove uk-card-body">
-                                        <img src="img/IMG-20180803-WA0018.jpg" alt="">
-                                    </div>
-                                </a>
-                                <a>
-                                    <div class="uk-card uk-card-hover  uk-padding-remove uk-card-body">
-                                        <img src="img/IMG-20180803-WA0018.jpg" alt="">
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Media Top</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                     </div>
-                </li>
-                <li>
-                    <a href="#">
-                        Women
-                    </a>
-                    <div class="uk-navbar-dropdown uk-navbar-dropdown-width-5">
-                        <div class="uk-navbar-dropdown-grid uk-child-width-1-3@m" uk-grid>
-                            <div>
-                                <ul class="uk-nav uk-navbar-dropdown-nav">
-                                    <li class="uk-active"><a href="#">Active</a></li>
-                                    <li><a href="#">Item</a></li>
-                                    <li class="uk-nav-header">Header</li>
-                                    <li><a href="#">Item</a></li>
-                                    <li><a href="#">Item</a></li>
-                                    <li class="uk-nav-divider"></li>
-                                    <li><a href="#">Item</a></li>
-                                </ul>
-                            </div>
-                            <div class="uk-width-2-3@s uk-child-width-1-3@m uk-grid-small" uk-grid>
-                                <a>
-                                    <div class="uk-card uk-card-hover uk-padding-remove uk-card-body">
-                                        <img src="img/IMG-20180803-WA0018.jpg" alt="">
-                                    </div>
-                                </a>
-                                <a>
-                                    <div class="uk-card uk-card-hover  uk-padding-remove uk-card-body">
-                                        <img src="img/IMG-20180803-WA0018.jpg" alt="">
-                                    </div>
-                                </a>
-                                <a>
-                                    <div class="uk-card uk-card-hover  uk-padding-remove uk-card-body">
-                                        <img src="img/IMG-20180803-WA0018.jpg" alt="">
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-box-shadow-hover-large">
+                    <div class="uk-card-media-top">
+                        <img src="images/light.jpg" alt="">
                     </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</div>
-<div id="lastbar" class="uk-child-width-1-1@s" uk-sticky="offset: 110; show-on-up: true; animation: uk-animation-slide-top;">
-    <nav class="uk-navbar-container uk-margin" uk-navbar="dropbar: true">
-        <div class="uk-navbar-left">
-            <div class="uk-navbar-item">
-                <button class="uk-button uk-button-default uk-text-uppercase">Women</button>
-            </div>
-        </div>
-        <div class="uk-navbar-right">
-            <div class="uk-navbar-item">
-                <button class="uk-button uk-button-default uk-text-uppercase">Men</button>
-            </div>
-        </div>
-    </nav>
-</div>
-<section uk-parallax="bgy: 200" id="header">
-    <div class="uk-container uk-child-width-1-6@m uk-child-width-1-3@s uk-child-width-1-2 uk-height-1-1 uk-grid-small uk-flex-middle ui link cards" uk-grid>
-        <div>
-            <div class="ui fluid card">
-                <div class="image">
-                    <img src="img/IMG-20180803-WA0028.jpg">
-                </div>
-                <div class="content">
-                    <a class="header">Hat 1</a>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Media Top</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div>
-            <div class="ui fluid card">
-                <div class="image">
-                    <img src="img/IMG-20180803-WA0025.jpg">
-                </div>
-                <div class="content">
-                    <a class="header">Hat 2</a>
+            <div>
+                <div class="uk-card uk-card-default uk-box-shadow-hover-large">
+                    <div class="uk-card-media-top">
+                        <img src="images/light.jpg" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Media Top</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div>
-            <div class="ui fluid card">
-                <div class="image">
-                    <img src="img/IMG-20180803-WA0014.jpg">
+            <div>
+                <div class="uk-card uk-card-default uk-box-shadow-hover-large">
+                    <div class="uk-card-media-top">
+                        <img src="images/light.jpg" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Media Top</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
                 </div>
-                <div class="content">
-                    <a class="header">Hat 3</a>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-box-shadow-hover-large">
+                    <div class="uk-card-media-top">
+                        <img src="images/light.jpg" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Media Top</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div>
-            <div class="ui fluid card">
-                <div class="image">
-                    <img src="img/IMG-20180803-WA0040.jpg">
-                </div>
-                <div class="content">
-                    <a class="header">Hat 4</a>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="ui fluid card">
-                <div class="image">
-                    <img src="img/IMG-20180803-WA0039.jpg   ">
-                </div>
-                <div class="content">
-                    <a class="header">Hat 5</a>
+    </section>
+<div class="ui inverted vertical footer segment">
+    <div class="ui container">
+        <div class="ui stackable inverted divided equal height stackable grid">
+            <div class="three wide column">
+                <h4 class="ui inverted header">About</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">Sitemap</a>
+                    <a href="#" class="item">Contact Us</a>
+                    <a href="#" class="item">Religious Ceremonies</a>
+                    <a href="#" class="item">Gazebo Plans</a>
                 </div>
             </div>
-        </div>
-        <div>
-            <div class="ui fluid card">
-                <div class="image">
-                    <img src="img/IMG-20180803-WA0034.jpg">
+            <div class="three wide column">
+                <h4 class="ui inverted header">Services</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">Banana Pre-Order</a>
+                    <a href="#" class="item">DNA FAQ</a>
+                    <a href="#" class="item">How To Access</a>
+                    <a href="#" class="item">Favorite X-Men</a>
                 </div>
-                <div class="content">
-                    <a class="header">Hat 6</a>
-                </div>
+            </div>
+            <div class="seven wide column">
+                <h4 class="ui inverted header">Footer Header</h4>
+                <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
             </div>
         </div>
     </div>
-</section>
-<section id="sets">
-    <div class="uk-container uk-child-width-1-2@s" uk-grid>
-        <div>
-            <div class="uk-card">
-                <div class="uk-card-media-top">
-                    <div class="ui slide masked reveal image">
-                        <img src="img/IMG-20180803-WA0021.jpg" class="visible content">
-                        <img src="img/IMG-20180803-WA0020.jpg" class="hidden content">
-                    </div>
-                </div>
-                <div class="uk-card-body uk-text-center">
-                    <h3 class="uk-card-title uk-text-uppercase">New Trend</h3>
-                    <p>Power to the prints</p>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="uk-card">
-                <div class="uk-card-media-top">
-                    <div class="ui slide masked reveal image">
-                        <img src="img/IMG-20180803-WA0014.jpg" class="visible content">
-                        <img src="img/IMG-20180803-WA0015.jpg" class="hidden content">
-                    </div>
-                </div>
-                <div class="uk-card-body uk-text-center">
-                    <h3 class="uk-card-title uk-text-uppercase">The Stripes Edit</h3>
-                    <p>Original Pirate Material</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+</div>
 <body>
 
 <!--JavaScript at end of body for optimized loading-->
