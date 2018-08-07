@@ -89,18 +89,23 @@ body {
 }
 
 
-.uk-input{
-    box-shadow: -2px 3px 20px 0px #808080a3;
+.uk-input, .uk-select{
+    box-shadow: -2px 3px 20px 0px rgba(128, 128, 128, 0.51);
     border: solid 0;
     border-radius: 25px;
     font-family: 'NexaLight', sans-serif;
 }
+
 .uk-input:focus + span{
     color: rgba(128, 48, 27, 0.74);
 }
 
 #lowbar{
     background-color: #e5e5e5;
+    z-index: 1!important;
+}
+#lowbar .uk-navbar-container{
+    z-index: 1!important;
 }
 
 #lowbar .uk-input{
@@ -111,6 +116,31 @@ body {
     width: 100%;
     background: url(../img/hmgBG.png) no-repeat center bottom;
     background-size: cover;
+}
+
+.size .uk-select,.color .uk-select,.texture .uk-select{
+    width: 60%;
+    border-radius: 25px;
+    background-color: #fffdcf;
+}
+
+.color .uk-select,.color .uk-select:focus,.color .uk-select:active{
+    color: red;
+    font-weight: bold;
+    background-color: #fffdcf;
+}
+.size .uk-select,.size .uk-select:focus,.size .uk-select:active{
+    font-weight: bold;
+    background-color: #fffdcf;
+}
+.texture .uk-select,.texture .uk-select:focus,.texture .uk-select:active{
+    font-weight: bold;
+    background-color: #fffdcf;
+}
+#product{
+    min-height: calc((100vh) - 140px);
+    width: 100%;
+    padding-top: 30px;
 }
 
 .uk-input:focus, .uk-select:focus, .uk-textarea:focus {
@@ -142,6 +172,16 @@ body {
     color: #128200;
     font-size: 1.2rem;
     text-align: center;
+}
+
+footer{
+    height: 80px;
+    color: #ffffff;
+    width: 100%;
+    background-color: #1b1c1d;
+}
+footer>*{
+    color: #ffffff;
 }
 
 @media (min-width: 1024px) {
