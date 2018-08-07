@@ -18,7 +18,13 @@
     font-style: normal;
 }
 
+h1,h2,h3,h4,h5,h6,.uk-card-title{
+    font-family: 'NexaBold', sans-serif;
+}
 
+.uk-card-title{
+    color: #000;
+}
 
 /* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_59767">Text with this font applied</p> */
 body {
@@ -71,7 +77,8 @@ body {
 }
 
 #topbar{
-    background: linear-gradient(to right,#bf4727, #ee2a28);
+    background: #d10000;
+    /*background: #d10000 linear-gradient(to right,#bf4727, #ee2a28);*/
 }
 
 .uk-navbar-container:not(.uk-navbar-transparent){
@@ -93,7 +100,7 @@ body {
 }
 
 #lowbar{
-    background-color: #efeded;
+    background-color: #e5e5e5;
 }
 
 #lowbar .uk-input{
@@ -102,7 +109,7 @@ body {
 #content{
     min-height: calc((100vh) - 140px);
     width: 100%;
-    background: url(../img/hmgBG.png) no-repeat;
+    background: url(../img/hmgBG.png) no-repeat center bottom;
     background-size: cover;
 }
 
@@ -111,11 +118,25 @@ body {
     background-color: #fff;
     color: #666;
     border: solid 0;
-    box-shadow: -2px 3px 20px 0px rgba(36, 60, 143, 0.61);
+    box-shadow: -2px 3px 20px -10px rgba(128, 48, 27, 0.74);
 }
 .uk-card-default {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.79);
+    box-shadow: 0 5px 6px 2px rgba(0, 0, 0, 0.6);
 }
+.button-def{
+    border-radius: 25px;
+    padding: 0!important;
+    background: #fff409;
+    font-family: 'NexaLight', sans-serif;
+    font-size: 1.3rem;
+}
+
+#content .uk-card-title{
+    color: #128200;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
 @media (min-width: 1024px) {
     .uk-navbar-container , .uk-container{
         width: 100%;
