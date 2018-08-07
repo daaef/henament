@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/semantic.min.css">
 </head>
-    <div id="topbar" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+    <div id="topbar" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky;animation: animation: uk-animation-slide-top bottom: #transparent-sticky-navbar">
          <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
             <div class="uk-navbar-left uk-height-1-1">
                 <a class="uk-navbar-item uk-logo uk-height-1-1" href="#">
@@ -32,7 +32,7 @@
             </div>
         </nav>
     </div>
-    <div id="lowbar" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+    <div id="lowbar" uk-sticky="sel-target: .uk-navbar-container;offset: 60;show-on-up: true;animation: animation: uk-animation-slide-top cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
         <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
             <div class="uk-navbar-left">
                 <ul class="uk-navbar-nav">
@@ -54,7 +54,7 @@
     </div>
     <section class="uk-section" id="content">
         <div class="uk-container">
-            <div class="uk-position-relative uk-visible-toggle uk-margin-bottom" uk-slider="autoplay: true">
+            <div class="uk-position-relative uk-visible-toggle uk-margin-bottom" uk-slider="autoplay: true; autoplay-interval: 4000;velocity:2">
                 <div class="uk-slider-items uk-child-width-1-2 uk-grid-small uk-child-width-1-3@s uk-child-width-1-4@m">
                     <div>
                         <div class="uk-card uk-card-default uk-box-shadow-hover-large">
@@ -148,7 +148,7 @@
                 <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
                 <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
             </div>
-            <div class="uk-position-relative uk-visible-toggle" uk-slider="autoplay: true">
+            <div class="uk-position-relative uk-visible-toggle" uk-slider="autoplay: true; autoplay-interval: 3000">
                 <div class="uk-slider-items uk-child-width-1-2 uk-grid-small uk-child-width-1-3@s uk-child-width-1-4@m">
                     <div>
                         <div class="uk-card uk-card-default uk-box-shadow-hover-large">
