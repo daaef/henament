@@ -95,11 +95,15 @@ body {
     font-family: 'NexaLight', sans-serif;
 }
 
-.uk-form-controls .uk-input, .uk-form-controls .uk-select{
-    box-shadow: -2px 3px 20px -5px rgba(128, 128, 128, 0.76);
+.uk-form-controls .uk-input, .uk-form-controls .uk-select, input.uk-form{
+    box-shadow: -2px 3px 15px -5px rgba(128, 128, 128, 0.76);
     border: solid 0;
     border-radius: 25px;
     font-family: 'NexaLight', sans-serif;
+}
+
+.uk-accordion .uk-card{
+    box-shadow: -2px 3px 15px 0px rgba(128, 128, 128, 0.4);
 }
 
 .uk-accordion .uk-open{
@@ -258,6 +262,9 @@ footer>*{
     background-color: #ffffff;
 }
 
+.button-sub{
+    min-width: 120px ;
+}
 
 #itemCount {
     position: absolute;
@@ -310,9 +317,14 @@ footer>*{
     background-image: none!important;
 }
 .uk-accordion-title{
+    padding-left: 20px;
     line-height: 3.2;
-    border-top: 3px solid #d10000;
+    border-top: 3px solid rgba(209, 0, 0, 0.64);
     background-color: #e5e5e5;
+}
+
+.uk-accordion-content{
+    padding-left: 20px;
 }
 
 @media (min-width: 1024px) {
