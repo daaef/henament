@@ -65,8 +65,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="105" column="31" selection-start-line="105" selection-start-column="31" selection-end-line="105" selection-end-column="31" />
+            <state relative-caret-position="256">
+              <caret line="99" column="47" selection-start-line="99" selection-start-column="47" selection-end-line="99" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -87,11 +87,12 @@
       <file leaf-file-name="checkout.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/checkout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="109" column="82" selection-start-line="109" selection-start-column="82" selection-end-line="109" selection-end-column="82" />
+            <state relative-caret-position="468">
+              <caret line="238" column="92" selection-start-line="238" selection-start-column="92" selection-end-line="238" selection-end-column="92" />
               <folding>
                 <element signature="n#div#0;n#html#0;n#!!top" />
                 <element signature="n#div#1;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#section#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -287,7 +288,7 @@
       <workItem from="1533598577241" duration="1452000" />
       <workItem from="1533604299074" duration="23729000" />
       <workItem from="1533757013372" duration="132000" />
-      <workItem from="1533978065022" duration="19135000" />
+      <workItem from="1533978065022" duration="20166000" />
     </task>
     <task id="LOCAL-00001" summary="bars updated">
       <created>1533477506159</created>
@@ -300,7 +301,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69726000" />
+    <option name="totallyTimeSpent" value="70757000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -498,18 +499,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="105" column="31" selection-start-line="105" selection-start-column="31" selection-end-line="105" selection-end-column="31" />
+        <state relative-caret-position="256">
+          <caret line="99" column="47" selection-start-line="99" selection-start-column="47" selection-end-line="99" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/checkout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="109" column="82" selection-start-line="109" selection-start-column="82" selection-end-line="109" selection-end-column="82" />
+        <state relative-caret-position="468">
+          <caret line="238" column="92" selection-start-line="238" selection-start-column="92" selection-end-line="238" selection-end-column="92" />
           <folding>
             <element signature="n#div#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#section#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>

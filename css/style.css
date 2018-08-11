@@ -95,10 +95,10 @@ body {
     font-family: 'NexaLight', sans-serif;
 }
 
-.uk-form-controls .uk-input, .uk-form-controls .uk-select, input.uk-form{
-    box-shadow: -2px 3px 15px -5px rgba(128, 128, 128, 0.76);
-    border: solid 0;
-    border-radius: 25px;
+#checkout .uk-input, #checkout .uk-select{
+    box-shadow: none;
+    border: solid 1px rgba(128, 128, 128, 0.42);
+    border-radius: 0;
     font-family: 'NexaLight', sans-serif;
 }
 
