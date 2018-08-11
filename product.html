@@ -22,15 +22,29 @@
                 </ul>
 
             </div>
-            <div class="uk-navbar-right uk-light">
-                <div class="uk-navbar-item">
-                    <a class="uk-link-reset" href="#"><img src="img/user.png" alt=""></a>
-                </div>
-                <div class="uk-navbar-item">
-                    <a class="uk-link-reset" href="#"><img src="img/cart.png" alt=""></a>
-                    <span id="itemCount" class="uk-badge uk-position-top-right">0</span>
-                </div>
-            </div>
+             <div class="uk-navbar-right uk-light">
+                 <div class="uk-navbar-item">
+                     <a class="uk-link-reset" href="#"><img src="img/user.png" alt=""></a>
+                 </div>
+                 <div class="uk-navbar-item uk-position-relative">
+                     <a class="uk-link-reset" href="#"><img src="img/cart.png" alt=""></a>
+                     <div uk-drop="mode: click">
+                         <div class="uk-card uk-card-body uk-card-default uk-padding-small">
+                             <div id="shoppingCart">
+                                 <div id="cartItemsContainer">
+                                     <h4 class="uk-card-title uk-text-center">Items in your cart</h4>
+                                     <div id="cartItems"></div>
+                                     <span id="cartTotal"></span>
+                                 </div>
+                             </div>
+                             <div class="uk-width-1-1@m">
+                                 <a href="checkout.html" class="uk-button button-def uk-width-1-1@m">Checkout</a>
+                             </div>
+                         </div>
+                     </div>
+                     <span id="itemCount" class="uk-badge uk-position-top-right">0</span>
+                 </div>
+             </div>
         </nav>
     </div>
     <div id="lowbar" uk-sticky="sel-target: .uk-navbar-container;offset: 60;show-on-up: true;animation: animation: uk-animation-slide-top; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
@@ -109,34 +123,6 @@
             </div>
         </div>
     </section>
-<!--<div class="ui inverted vertical footer segment">-->
-    <!--<div class="ui container">-->
-        <!--<div class="ui stackable inverted divided equal height stackable grid">-->
-            <!--<div class="three wide column">-->
-                <!--<h4 class="ui inverted header">About</h4>-->
-                <!--<div class="ui inverted link list">-->
-                    <!--<a href="#" class="item">Sitemap</a>-->
-                    <!--<a href="#" class="item">Contact Us</a>-->
-                    <!--<a href="#" class="item">Religious Ceremonies</a>-->
-                    <!--<a href="#" class="item">Gazebo Plans</a>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="three wide column">-->
-                <!--<h4 class="ui inverted header">Services</h4>-->
-                <!--<div class="ui inverted link list">-->
-                    <!--<a href="#" class="item">Banana Pre-Order</a>-->
-                    <!--<a href="#" class="item">DNA FAQ</a>-->
-                    <!--<a href="#" class="item">How To Access</a>-->
-                    <!--<a href="#" class="item">Favorite X-Men</a>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="seven wide column">-->
-                <!--<h4 class="ui inverted header">Footer Header</h4>-->
-                <!--<p>Extra space for a call to action inside the footer that could help re-engage users.</p>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
 <footer class="uk-flex uk-flex-center uk-flex-middle">
     <p class="uk-text-uppercase">&copy;henament2018</p>
 </footer>

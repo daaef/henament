@@ -102,6 +102,15 @@ body {
     font-family: 'NexaLight', sans-serif;
 }
 
+.add.uk-link i{
+    position: absolute;
+    color: #c4c4c4;
+    font-size: xx-large;
+    top: 10px;
+    right: 5px;
+}
+
+
 .uk-accordion .uk-card{
     box-shadow: -2px 3px 15px 0px rgba(128, 128, 128, 0.4);
 }
