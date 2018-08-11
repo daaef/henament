@@ -22,15 +22,27 @@
                 </ul>
 
             </div>
-            <div class="uk-navbar-right uk-light">
-                <div class="uk-navbar-item">
-                    <a class="uk-link-reset" href="#"><img src="img/user.png" alt=""></a>
-                </div>
-                <div class="uk-navbar-item">
-                    <a class="uk-link-reset" href="#"><img src="img/cart.png" alt=""></a>
-                    <span id="itemCount" class="uk-badge uk-position-top-right">0</span>
-                </div>
-            </div>
+             <div class="uk-navbar-right uk-light">
+                 <div class="uk-navbar-item">
+                     <a class="uk-link-reset" href="#"><img src="img/user.png" alt=""></a>
+                 </div>
+                 <div class="uk-navbar-item uk-position-relative">
+                     <a class="uk-link-reset" href="#"><img src="img/cart.png" alt=""></a>
+                     <div uk-drop="mode: click">
+                         <div class="uk-card uk-card-body uk-card-default uk-padding-small">
+                             <div id="shoppingCart">
+                                 <div id="cartItemsContainer">
+                                     <h4 class="uk-card-title">Items in your cart</h4>
+                                     <i class="fa fa-times-circle-o fa-3x openCloseCart" aria-hidden="true"></i>
+                                     <div id="cartItems"></div>
+                                     <span id="cartTotal"></span>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <span id="itemCount" class="uk-badge uk-position-top-right">0</span>
+                 </div>
+             </div>
         </nav>
     </div>
     <div id="lowbar" uk-sticky="sel-target: .uk-navbar-container;offset: 60;show-on-up: true;animation: animation: uk-animation-slide-top cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
@@ -93,88 +105,88 @@
                 <div>
                     <div class="uk-card uk-card-default uk-box-shadow-hover-large">
                         <div class="uk-card-media-top">
-                            <img src="img/belt4.jpg" alt="">
+                            <img src="img/hat1.jpg" alt="">
                         </div>
                         <div class="uk-card-body uk-text-center">
-                            <a class="add uk-button button-def uk-width-1-1@m" href="product.html">ADD TO CART</a>
-                            <h3 class="uk-card-title">NGN 7000.00</h3>
+                            <a class="add uk-button button-def uk-width-1-1@m" href="#">ADD TO CART</a>
+                            <h3 class="uk-card-title">NGN <span class="price">4000.00</span></h3>
                         </div>
                     </div>
                 </div>
                 <div>
                     <div class="uk-card uk-card-default uk-box-shadow-hover-large">
                         <div class="uk-card-media-top">
-                            <img src="img/belt4.jpg" alt="">
+                            <img src="img/hat2.jpg" alt="">
                         </div>
                         <div class="uk-card-body uk-text-center">
-                            <a class="add uk-button button-def uk-width-1-1@m" href="product.html">ADD TO CART</a>
-                            <h3 class="uk-card-title">NGN 7000.00</h3>
+                            <a class="add uk-button button-def uk-width-1-1@m" href="#">ADD TO CART</a>
+                            <h3 class="uk-card-title">NGN <span class="price">3000.00</span></h3>
                         </div>
                     </div>
                 </div>
                 <div>
                     <div class="uk-card uk-card-default uk-box-shadow-hover-large">
                         <div class="uk-card-media-top">
-                            <img src="img/belt4.jpg" alt="">
+                            <img src="img/hat3.jpg" alt="">
                         </div>
                         <div class="uk-card-body uk-text-center">
-                            <a class="add uk-button button-def uk-width-1-1@m" href="product.html">ADD TO CART</a>
-                            <h3 class="uk-card-title">NGN 7000.00</h3>
+                            <a class="add uk-button button-def uk-width-1-1@m" href="#">ADD TO CART</a>
+                            <h3 class="uk-card-title">NGN <span class="price">7000.00</span></h3>
                         </div>
                     </div>
                 </div>
                 <div>
                     <div class="uk-card uk-card-default uk-box-shadow-hover-large">
                         <div class="uk-card-media-top">
-                            <img src="img/belt4.jpg" alt="">
+                            <img src="img/hat4.jpg" alt="">
                         </div>
                         <div class="uk-card-body uk-text-center">
-                            <a class="add uk-button button-def uk-width-1-1@m" href="product.html">ADD TO CART</a>
-                            <h3 class="uk-card-title">NGN 7000.00</h3>
+                            <a class="add uk-button button-def uk-width-1-1@m" href="#">ADD TO CART</a>
+                            <h3 class="uk-card-title">NGN <span class="price">1000.00</span></h3>
                         </div>
                     </div>
                 </div>
                 <div>
                     <div class="uk-card uk-card-default uk-box-shadow-hover-large">
                         <div class="uk-card-media-top">
-                            <img src="img/belt4.jpg" alt="">
+                            <img src="img/hat2.jpg" alt="">
                         </div>
                         <div class="uk-card-body uk-text-center">
-                            <a class="add uk-button button-def uk-width-1-1@m" href="product.html">ADD TO CART</a>
-                            <h3 class="uk-card-title">NGN 7000.00</h3>
+                            <a class="add uk-button button-def uk-width-1-1@m" href="#">ADD TO CART</a>
+                            <h3 class="uk-card-title">NGN <span class="price">5000.00</span></h3>
                         </div>
                     </div>
                 </div>
                 <div>
                     <div class="uk-card uk-card-default uk-box-shadow-hover-large">
                         <div class="uk-card-media-top">
-                            <img src="img/belt4.jpg" alt="">
+                            <img src="img/hat3.jpg" alt="">
                         </div>
                         <div class="uk-card-body uk-text-center">
-                            <a class="add uk-button button-def uk-width-1-1@m" href="product.html">ADD TO CART</a>
-                            <h3 class="uk-card-title">NGN 7000.00</h3>
+                            <a class="add uk-button button-def uk-width-1-1@m" href="#">ADD TO CART</a>
+                            <h3 class="uk-card-title">NGN <span class="price">3600.00</span></h3>
                         </div>
                     </div>
                 </div>
                 <div>
                     <div class="uk-card uk-card-default uk-box-shadow-hover-large">
                         <div class="uk-card-media-top">
-                            <img src="img/belt4.jpg" alt="">
+                            <img src="img/hat4.jpg" alt="">
                         </div>
                         <div class="uk-card-body uk-text-center">
-                            <a class="add uk-button button-def uk-width-1-1@m" href="product.html">ADD TO CART</a>
-                            <h3 class="uk-card-title">NGN 7000.00</h3>
+                            <a class="add uk-button button-def uk-width-1-1@m" href="#">ADD TO CART</a>
+                            <h3 class="uk-card-title">NGN <span class="price">2900.00</span></h3>
                         </div>
                     </div>
                 </div>
                 <div>
                     <div class="uk-card uk-card-default uk-box-shadow-hover-large">
                         <div class="uk-card-media-top">
-                            <img src="img/belt4.jpg" alt="">
+                            <img src="img/hat1.jpg" alt="">
                         </div>
                         <div class="uk-card-body uk-text-center">
-                            <a class="add uk-button button-def uk-width-1-1@m" href="product.html">ADD TO CART</a>
-                            <h3 class="uk-card-title">NGN 7000.00</h3>
+                            <a class="add uk-button button-def uk-width-1-1@m" href="#">ADD TO CART</a>
+                            <h3 class="uk-card-title">NGN <span class="price">8100.00</span></h3>
                         </div>
                     </div>
                 </div>

@@ -31,7 +31,7 @@ $('#emptyCart').click(function() {
 
     $('#itemCount').css('display', 'none');
     $('#cartItems').text('');
-    $('#cartTotal').text("Total: €" + priceTotal);
+    $('#cartTotal').text("Total: NGN " + priceTotal + ".00");
 });
 
 
@@ -45,9 +45,9 @@ $('#shoppingCart').on('click', '.removeItem', function(){
     // Remove Cost of Deleted Item from Total Price
     var price = parseInt($(this).siblings().find('.price').text());
     priceTotal -= price;
-    $('#cartTotal').text("Total: €" + priceTotal);
-
-    if (itemCount == 0) {
+    $('#cartTotal').text("Total: NGN " + priceTotal + ".00");
+    console.log(itemCount);
+    if (itemCount === 0) {
         $('#itemCount').css('display', 'none');
     }
 });

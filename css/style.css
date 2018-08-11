@@ -95,6 +95,26 @@ body {
     font-family: 'NexaLight', sans-serif;
 }
 
+.uk-form-controls .uk-input, .uk-form-controls .uk-select{
+    box-shadow: -2px 3px 20px -5px rgba(128, 128, 128, 0.76);
+    border: solid 0;
+    border-radius: 25px;
+    font-family: 'NexaLight', sans-serif;
+}
+
+.uk-accordion .uk-open{
+    padding-bottom: 50px;
+}
+
+.uk-form-label{
+    font-size: 16px;
+}
+
+.red{
+    color: red;
+    font-size: 20px;
+    top: 0;
+}
 
 .sidebar-cat {
     width: 320px;
@@ -111,6 +131,11 @@ body {
 
 .content-cat{
     padding-right: 50px;
+    margin-bottom: 100px;
+}
+
+#content, #product, #checkout{
+    margin-bottom: 100px;
 }
 
 .uk-input:focus + span{
@@ -200,7 +225,13 @@ footer{
     color: #ffffff;
     width: 100%;
     background-color: #1b1c1d;
+    position: fixed;
+    bottom: 0;
+    z-index: 0;
 }
+
+
+
 footer>*{
     color: #ffffff;
 }
@@ -253,9 +284,14 @@ footer>*{
 .uk-drop .uk-card .uk-card .uk-card-body{
     padding: 10px;
 }
+.uk-drop .button-def{
+    color: #000!important;
+}
+.uk-drop .button-def:hover{
+    color: #fff!important;
+}
 .uk-drop .uk-card .uk-card{
     margin-bottom: 20px;
-    border: 1px solid rgba(8, 8, 8, 0.6);
     box-shadow: none!important;
     display: flex;
 }
@@ -268,6 +304,15 @@ footer>*{
 #cartTotal{
     font-weight: bold;
     font-size: 20px;
+}
+
+.uk-accordion-title::after{
+    background-image: none!important;
+}
+.uk-accordion-title{
+    line-height: 3.2;
+    border-top: 3px solid #d10000;
+    background-color: #e5e5e5;
 }
 
 @media (min-width: 1024px) {
