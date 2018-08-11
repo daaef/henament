@@ -227,6 +227,49 @@ footer>*{
     background-color: #ffffff;
 }
 
+
+#itemCount {
+    position: absolute;
+    display: none;
+    top: 10px;
+    right: 0;
+}
+
+.uk-drop{
+    max-height: 70vh;
+    overflow: auto;
+}
+
+.uk-drop .uk-card .uk-card .button-def{
+    display: none;
+}
+
+.uk-drop .uk-card .uk-card img{
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.uk-drop .uk-card .uk-card .uk-card-body{
+    padding: 10px;
+}
+.uk-drop .uk-card .uk-card{
+    margin-bottom: 20px;
+    border: 1px solid rgba(8, 8, 8, 0.6);
+    box-shadow: none!important;
+    display: flex;
+}
+
+.removeItem{
+    background: #d10000;
+    color: #ffffff;
+}
+
+#cartTotal{
+    font-weight: bold;
+    font-size: 20px;
+}
+
 @media (min-width: 1024px) {
     .uk-navbar-container , .uk-container{
         width: 100%;
