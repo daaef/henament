@@ -88,12 +88,29 @@ body {
     box-shadow: 0 0 20px #8080804d;
 }
 
-
 .uk-input, .uk-select{
-    box-shadow: -2px 3px 20px 0px rgba(128, 128, 128, 0.51);
+    box-shadow: -2px 3px 20px 0px rgba(128, 128, 128, 0.16);
     border: solid 0;
     border-radius: 25px;
     font-family: 'NexaLight', sans-serif;
+}
+
+
+.sidebar-cat {
+    width: 320px;
+    padding-left: 80px; }
+
+@media (min-width: 959px) {
+    .content-cat {
+        width: calc((100%) - 320px); }
+    .content-cat .uk-button {
+        font-size: 0.75rem; } }
+
+.sidebar-cat .uk-text-muted {
+    color: #b6b6b6 !important; }
+
+.content-cat{
+    padding-right: 50px;
 }
 
 .uk-input:focus + span{
@@ -115,7 +132,7 @@ body {
     min-height: calc((100vh) - 140px);
     width: 100%;
     background: url(../img/hmgBG.png) no-repeat center bottom;
-    background-size: cover;
+    background-size: contain;
 }
 
 .size .uk-select,.color .uk-select,.texture .uk-select{
