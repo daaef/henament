@@ -16,6 +16,19 @@ $('.add').click(function (){
     $('#cartTotal').text("Total: NGN " + priceTotal + ".00");
 });
 
+// Add Item to Cart
+$('.addvanced').click(function (){
+    itemCount ++;
+
+    $('#itemCount').text(itemCount).css('display', 'flex');
+    $(this).siblings().clone().appendTo('#cartItems').append('<button class="removeItem uk-button-default button-def">Remove Item</button>');
+
+    // Calculate Total Price
+    var price = parseInt($(this).siblings().find('.price').text());
+    priceTotal += price;
+    $('#cartTotal').text("Total: NGN " + priceTotal + ".00");
+});
+
 
 
 // Hide and Show Cart Items
