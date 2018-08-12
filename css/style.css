@@ -179,8 +179,6 @@ body {
 #content {
     min-height: calc((100vh) - 140px);
     width: 100%;
-    background: url(../img/hmgBG.png) no-repeat center bottom;
-    background-size: contain;
 }
 
 .size .uk-select, .color .uk-select, .texture .uk-select {
