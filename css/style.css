@@ -308,6 +308,10 @@ footer > * {
     object-fit: cover;
 }
 
+html, body{
+    background: #efefef!important;
+}
+
 .uk-drop .uk-card .uk-card .uk-card-body {
     padding: 10px;
 }
