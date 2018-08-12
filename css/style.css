@@ -319,6 +319,12 @@ footer>*{
     min-width: 120px;
     border: 0 solid;
     margin-bottom: 30px;
+    font-size: 15px!important;
+}
+
+.uk-slideshow-items img{
+    width: 100%;
+    height: 100%;
 }
 
 .uk-drop i{
@@ -337,6 +343,7 @@ footer>*{
 .uk-accordion-title::after{
     background-image: none!important;
 }
+
 .uk-accordion-title{
     padding-left: 20px;
     line-height: 3.2;
