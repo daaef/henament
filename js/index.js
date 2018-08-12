@@ -8,7 +8,7 @@ $('.add').click(function (){
     itemCount ++;
 
     $('#itemCount').text(itemCount).css('display', 'flex');
-    $(this).parent().parent().clone().appendTo('#cartItems').append('<button class="removeItem">Remove Item</button>');
+    $(this).parent().parent().clone().appendTo('#cartItems').append('<button class="removeItem uk-button-default button-def">Remove Item</button>');
 
     // Calculate Total Price
     var price = parseInt($(this).siblings().find('.price').text());

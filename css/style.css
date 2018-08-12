@@ -206,7 +206,7 @@ body {
     box-shadow: -2px 3px 20px -10px rgba(128, 48, 27, 0.74);
 }
 .uk-card-default {
-    box-shadow: 0 5px 6px 2px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 5px 6px -1px rgba(0, 0, 0, 0.6);
     /*border-radius: 5px;*/
 }
 .button-def{
@@ -313,8 +313,20 @@ footer>*{
 }
 
 .removeItem{
+    /*background: #d10000!important;*/
+    /*color: #ffffff!important;*/
+    line-height: 30px;
+    min-width: 120px;
+    border: 0 solid;
+    margin-bottom: 30px;
+}
+
+.uk-drop i{
+    display: none!important;
+}
+
+.uk-drop .removeItem:hover{
     background: #d10000;
-    color: #ffffff;
 }
 
 #cartTotal{
@@ -334,6 +346,10 @@ footer>*{
 
 .uk-accordion-content{
     padding-left: 20px;
+}
+
+#cartTotal{
+    display: none;
 }
 
 @media (min-width: 1024px) {
