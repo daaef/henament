@@ -624,6 +624,24 @@ img.keys {
     }
 }
 
+.uk-thumbnav li{
+    height: 25%;
+    overflow: hidden;
+}
+
+.uk-thumbnav{
+    width: 70px;
+}
+
+.uk-thumbnav li a, .uk-thumbnav li a img, #nav-cont, .uk-thumbnav{
+    height: 100%;
+}
+
+.uk-thumbnav li a img{
+    width: 100%!important;
+    object-fit: contain;
+}
+
 @media screen and (max-width: 992px) {
     .hidePhone {
         display: none
@@ -633,6 +651,14 @@ img.keys {
         zoom: .7
     }
 }
+
+@media screen and (max-width: 959px) {
+   #spec{
+       height: 100vh;
+   }
+}
+
+
 
 @media screen and (max-width: 1250px) {
     #pdtViewer img {
