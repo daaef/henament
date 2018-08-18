@@ -658,7 +658,15 @@ img.keys {
    }
 }
 
+#checkout .uk-text-bold{
+    font-weight: 400!important;
+    color: #000!important;
+    font-size: 18px!important;
+}
 
+#checkout .button-def{
+    width: 210px;
+}
 
 @media screen and (max-width: 1250px) {
     #pdtViewer img {
